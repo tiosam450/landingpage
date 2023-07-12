@@ -1,0 +1,336 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body{
+    overflow-x: hidden !important;
+}
+
+img, video{
+    display: block;
+}
+
+p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    letter-spacing: 0.02em;
+    color: rgb(39, 39, 39);
+}
+
+.bannerDesk{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoDesk{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.logoLine{
+    position: absolute;
+    margin: 0;
+    padding: 100px;
+    width: 1100px;
+    max-width: 100%;
+}
+
+@media (max-width: 580px) {
+    .videoDesk{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .logoLine{
+        position: absolute;
+        margin: 0;
+        padding: 50px;
+        width: 1100px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1366px) {
+    .logoLine{
+        position: absolute;
+        margin: 0;
+        padding: 50px;
+        width: 600px;
+        max-width: 100%;
+    }
+}
+
+.introducao{
+    margin: 200px auto;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto{
+    margin: 0 100px 0 0;
+    max-width: 500px;
+    min-width: 200px;
+}
+
+.introducao .gif1{
+    width: 500px;
+    mix-blend-mode: screen;
+}
+
+.introducao video{
+    mix-blend-mode: screen;
+}
+
+@media (max-width: 580px) {
+    .introducao{
+        flex-direction:column;
+        width: 100%;
+        margin: 80px 0;
+        padding: 20px;
+    }
+
+    .texto{
+        /* text-align: center; */
+        margin: 0 30px 60px 30px;
+        max-width: 100%;
+        min-width: 100%;
+        font-size: .5em;
+        line-height: 1.17em;
+    }
+
+    .texto p{
+        font-size: 1.2em;
+        line-height: 1.56em;
+    }
+    
+    .introducao .gif1{
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .introducao{
+        width: 100%;
+        margin: 60px 0;
+        padding: 20px;
+    }
+
+    .texto{
+        width: 400px;
+        font-size: .9em;
+    }
+    
+    .introducao .gif1{
+        width: 300;
+        padding: 20px;
+    }
+}
+
+.contato{
+    margin-top: 400px;
+    background: url(../img/bg_contato.svg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+@media (max-width: 580px) {
+    .contato{
+        margin-top: 100px;
+    }
+}
+
+.galeriaFotos{
+    margin: -150px 0 100px;
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.galeriaFotos li img{
+    max-width: 400px;
+    padding: 30px;
+    transition: .2s;
+}
+
+.galeriaFotos li img:hover{
+    transform: scale(1.2);
+    transition: .2s;
+}
+
+@media (max-width: 1366px) {
+    .contato{
+        margin-top: 180px;
+    }
+
+    .galeriaFotos{
+        margin: -130px 0 100px;
+        max-width: 1000px;
+        padding: 20px;
+    }
+    
+    .galeriaFotos li img{
+        max-width: 280px;
+        padding: 25px;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 580px) {
+
+    .galeriaFotos{
+        margin: 100px 0 10px;
+        max-width: 1000px;
+        padding: 20px;
+    }
+    
+    .galeriaFotos li img{
+        max-width: 100%;
+        padding: 40px 0;
+        transition: .2s;
+    }
+}
+
+.contato{
+    padding: 30px 0 100px;
+}
+
+.contato p{
+    color: rgb(233, 233, 233);
+    margin: 60px 30px 30px;
+    text-align: center;
+}
+
+@media (max-width: 580px) {
+    .contato p{
+        font-size: 1.2em;
+        line-height: 1.56em;
+    }
+}
+
+
+.botao1, .botao2{
+    display: block;
+    max-width: 100%;
+    background: url(../img/botao.png) no-repeat;
+    background-size: contain;
+    width: 350px;
+    height: 100px;
+    cursor: pointer;
+    transition: .5s !important;
+}
+
+.botao1:hover, .botao2:hover{
+    background: url(../img/botao_hover.png) no-repeat;
+    background-size: contain;
+    width: 350px;
+    height: 100px;
+    cursor: pointer;
+    transform: scale(1.1) !important;
+    transition: .5s !important;
+}
+
+@media (max-width: 580px) {
+    .botao1, .botao2{
+        width: 250px;
+        height: 70px;
+    }
+}
+
+.gostou{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 100px 0 150px;
+}
+
+.gostou p{
+    max-width: 300px;
+    margin: 0 60px 0 0;
+    padding: 60px 30px 0 30px;
+    font-size: 1.2em;
+    line-height: 1.56em;
+}
+
+.gostou img{
+    width: 200px;
+    animation: balanco 1s infinite alternate;
+}
+
+@keyframes balanco {
+    from {
+      transform: rotate(20deg);
+    }
+    to {
+      transform: rotate(-20deg);
+    }
+}
+
+@media (max-width: 580px) {
+    .gostou{
+        flex-direction: column;
+        margin: 30px 0 100px;
+    }
+    .gostou p{
+        margin: 0;
+       text-align: center;
+       margin-bottom: 60px;
+    }
+
+    .gostou img{
+      width: 150px;
+    }
+}
+
+footer{
+    font-size: .9em;
+    background: url(../img/bg_footer.svg) no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 30px 0 30px;
+    
+
+}
+footer p{
+    color: rgb(233, 233, 233);
+    font-size: 1em;
+
+}
+
+
+@media (max-width: 1366px) {
+    footer p{
+        color: rgb(233, 233, 233);
+        font-size: 0.9em;
+        padding: 0 30px;
+}
+}
+
+
+@media (max-width: 580px) {
+    footer p{
+        color: rgb(233, 233, 233);
+        font-size: 0.7em;
+        padding: 0 30px;
+}
+}
